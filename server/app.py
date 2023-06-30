@@ -22,6 +22,8 @@ def show_session(key):
     }), 200)
 
     response.set_cookie('mouse', 'Cookie')
+    response.set_cookie('x', session[key])
+    print(request.cookies)
 
     return response
 
